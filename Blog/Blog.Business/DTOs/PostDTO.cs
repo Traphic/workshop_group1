@@ -21,5 +21,6 @@
         public List<CommentDTO> CommentDTOs { get; set; } = [];
 
         public List<CategoryDTO> CategoryDTOs { get; set; } = [];
+
     }
 }

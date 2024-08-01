@@ -15,6 +15,7 @@
         public string LastEditedBy { get; set; }
 
         public List<CategoryDTO> CategoryDTOs { get; set; }
+
     }
 }
 

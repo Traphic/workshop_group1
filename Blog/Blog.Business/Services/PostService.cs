@@ -82,6 +82,12 @@ namespace Blog.Business.Services
 
             _mapper.Map(postDTO, dbPost);
 
+            if (dbPost is not null)
+            {
+                dbPost.UpdatedDate = DateTime.Now;
+            }
+
+
             await _dbContext.SaveChangesAsync();
         }
 
